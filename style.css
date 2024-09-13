@@ -6,9 +6,62 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
-    font-family: ;
+        font-family: "Rubik Mono One", monospace;
+        font-weight: 400;
+        font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color:bisque;
+}
+
+/* Transitions */
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+/*Desktop Navigation*/
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh; /*Dictates how much of screen is taken up by nav*/
+
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color:#4c7156;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    font-size: 28px;
+    color:#6eab7e;
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default
 }
