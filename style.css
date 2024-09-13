@@ -37,6 +37,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh; /*Dictates how much of screen is taken up by nav*/
+    text-align: center;
 
 }
 
@@ -64,4 +65,82 @@ a:hover {
 
 .logo:hover{
     cursor: default
+}
+
+/* HAMBURGER NAV */
+#hamburger-nav {
+    display: none;
+    text-align: left;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: #4c7156;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right:0;
+    background-color:white;
+    width:fit-content;
+    max-height:0;
+    overflow:hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4c7156;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child { /*Target First Span Element */
+    transform: rottate(45deg) translate(10px, 5px); /*Turns Hamburger Icon Into X)*/
+}
+
+.hamburger-icon.open span:nth-child {
+    opacity: 0;
+
+}.hamburger-icon.open span:last-child {
+    transform: rottate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+
+}.hamburger-icon span:first-child {
+    transform: none;
 }
