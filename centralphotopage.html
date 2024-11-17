@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="photographystyle.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="title_div">
+      <hr />
+      <div class="photography_line">
+        <span class="photography_titles">CENTRAL<br />PARK WHIMSY</span>
+        <span class="photography_number">05</span>
+      </div>
+      <hr />
+    </div>
+    <div class="body_div">
+      <div class="image_wrapper">
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="/Photography Photos/Central Photos/IMG_5755 [MConverter.eu].avif"
+        />
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="/Photography Photos/Central Photos/IMG_5758 [MConverter.eu].avif"
+        />
+      </div>
+      <p class="body_text">
+        Growing up in Pasadena, California, I’ve always been drawn to nature as
+        a natural backdrop for my photography. During a picnic in Central Park,
+        I set out to capture my friend’s whimsical personality through a series
+        of portraits. Inspired by her vibrant energy, I aimed to create images
+        that felt light, free, and full of life. Using color grading to achieve
+        an iridescent quality, I sought to evoke a dreamlike atmosphere,
+        bringing her unique essence to life in each frame.
+      </p>
+    </div>
+    <hr />
+
+    <div class="grid-container"></div>
+
+    <div class="row">
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Central Photos/IMG_5740 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Central Photos/IMG_5743 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Central Photos/IMG_5746 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Central Photos/IMG_5763 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Central Photos/IMG_5769 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

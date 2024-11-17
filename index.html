@@ -1,65 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
+  </head>
 
-<body style="background-color: #F9E4Bc;">
+  <body style="background-color: #ffffff">
     <nav id="desktop-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="./index.html">About</a></li>
-                <li><a href="./photography.html">Photography</a></li>
-                <li><a href="./projects.html">Creative Media</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">PAST PRESENT FUTURE</div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <div class="menu-links">
-                <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-                <li><a href="./photography.html" onclick="toggleMenu()">Photography</a></li>
-                <li><a href="./projects.html" onclick="toggleMenu()">Creative Media</a></li>
-                <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
         </div>
-        </div>
+      </div>
     </nav>
+    <hr />
     <section id="profile">
-        <div class="section_pic-container">
-            <img src="./assets/sona_coverphoto.jpg" alt="Sona Cover Photo" width="450" height="620">
-        </div>
-        <div class="section__text">
-            <h1 class="title">Mateo Hernandez</h1>
-            <p class="section__text__p1">Photography</p>
-            <p class="section__text__p1">Creative Coding</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onClick="window.open('./assets/Mateo_Hernandez_Resume.pdf')">
-                   Resume 
-                </button>
-                <button class="btn btn-color-1" onClick="location.href='./contact.html'">
-                    Contact
-                </button>
-            </div>
-            <div></div>
+      <div class="section__text">
+        <h1 class="title">MATEO HERNANDEZ</h1>
+        <hr />
 
+        <div class="marquee marquee--3">
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 1 new/IMG_2621-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="./Rotating Banner Images]/row 1 new/IMG_6491-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 1 new/IMG_6614-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 1 new/IMG_7042-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 1 new/IMG_7740-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="./Rotating Banner Images]/row 1 new/IMG_9519.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
         </div>
+
+        <div style="margin-bottom: 1%" class="marquee marquee--4">
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 2 new/2AFAE7F8-A43E-4B5D-89A8-5C4C1BB07240.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 2 new/IMG_1270.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="./Rotating Banner Images]/row 2 new/IMG_3158-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="/Rotating Banner Images]/row 2 new/IMG_4166.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="./Rotating Banner Images]/row 2 new/IMG_8607-copy.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+          <img
+            class="marquee__item"
+            src="./Rotating Banner Images]/row 2 new/IMG_8735.webp"
+            width="200"
+            height="250"
+            alt=""
+          />
+        </div>
+        <hr />
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            style="font-size: 150%"
+            onClick="window.open('./assets/Mateo_Hernandez_Resume_2024.docx.pdf')"
+          >
+            Resume
+          </button>
+          <button
+            class="btn btn-color-1"
+            style="font-size: 150%"
+            onClick="location.href='./contact.html'"
+          >
+            Contact
+          </button>
+        </div>
+        <hr />
+        <div>
+          <h1 class="title">RECENT WORK</h1>
+        </div>
+      </div>
+      <div
+        class="photo_post_container"
+        style="justify-content: space-evenly; padding-left: 0%"
+      >
+        <a class="day_in_life_card" href="dayinlife.html">
+          <div class="card">
+            <img
+              class="icon_images"
+              src="/Creative Media Icons/day_icon.avif"
+            />
+            <div class="card-content">
+              <h3>Day In My Life</h3>
+              <p>Video Editing</p>
+            </div>
+          </div>
+        </a>
+        <a class="voting_card" href="votingphotopage.html">
+          <div class="card">
+            <img
+              class="icon_images"
+              src="/photography_icons/Lamar_UpClose.webp"
+            />
+            <div class="card-content">
+              <h3>V0ting Is C00l</h3>
+              <p>November - 1 - 2024</p>
+            </div>
+          </div>
+        </a>
+        <a class="amtrack_card" href="./amtrackphotopage.html">
+          <div class="card">
+            <img class="icon_images" src="/photography_icons/Untitled-1.webp" />
+            <div class="card-content">
+              <h3>Across The Amtrack</h3>
+              <p>August - 24 - 2024</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

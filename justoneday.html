@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="title_div">
+      <hr />
+      <div class="photography_line">
+        <span class="photography_titles">JUST<br />ONE DAY</span>
+        <span class="photography_number">2024</span>
+      </div>
+      <hr />
+    </div>
+    <div class="body_div_creative_media">
+      <div class="image_wrapper">
+        <video class="body_image" controls>
+          <source
+            src="Creative Media Content/Midterm Final Cut - Mat (720p, h264, youtube).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="body_text_creative_media">
+        For my first-ever Photo Roman, I combined still images and animated
+        elements to tell a story inspired by my own experiences. Set to the
+        hauntingly beautiful song "Prom" by SZA, the project follows an
+        imaginary daydream that explores the sense of freedom and whimsy I often
+        wish for when overwhelmed by everyday responsibilities. Through
+        carefully curated images and music, this video creates a vivid and
+        immersive narrative that captures the enchanting feeling of daydreaming.
+        This project demonstrates my ability to seamlessly blend photography,
+        video editing, and storytelling to produce a compelling and emotional
+        visual experience.
+      </p>
+      <p class="body_text_creative_media">
+        <span class="bolded">Software Used:</span> Canon Camera T6 - Adobe
+        Premiere Pro - Adobe Photoshop
+      </p>
+    </div>
+    <hr />
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

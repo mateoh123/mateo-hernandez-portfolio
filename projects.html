@@ -1,52 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body style="background-color: #F9E4Bc;">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
+
+  <body style="background-color: #ffffff">
     <nav id="desktop-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="./index.html">About</a></li>
-                <li><a href="./photography.html">Photography</a></li>
-                <li><a href="./projects.html">Creative Media</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-                <li><a href="./photography.html" onclick="toggleMenu()">Photography</a></li>
-                <li><a href="./projects.html" onclick="toggleMenu()">Creative Media</a></li>
-                <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
-    <div class="box">
-    <iframe src="https://editor.p5js.org/mateoh.gif/full/8_LGGJxXY" width="700" height="740" frameBorder="0" scrolling="no" id="testFrame" align="left" style="margin-left: 40px;"></iframe>
-    </div>
-    <div class="box">
-    <iframe src="https://editor.p5js.org/mateoh.gif/full/h-MlGJWYc" width="700" height="740" frameBorder="0" scrolling="no" id="testFrame" align="right"></iframe>
+    <hr />
+    <h1 class="title">CREATIVE MEDIA</h1>
+    <hr />
+    <div class="photo_post_container">
+      <a class="day_in_life_card" href="dayinlife.html">
+        <div class="card">
+          <img class="icon_images" src="/Creative Media Icons/day_icon.avif" />
+          <div class="card-content">
+            <h3>Day In My Life</h3>
+            <p>Video Editing</p>
+          </div>
+        </div>
+      </a>
+      <a class="house_development_card" href="./housedevelopment.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/Creative Media Icons/house_escape_icon.avif"
+          />
+          <div class="card-content">
+            <h3>House Development</h3>
+            <p>Javacript Project</p>
+          </div>
+        </div>
+      </a>
+      <a class="turn_it_off_card" href="./turnitoff.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/Creative Media Icons/house_icon.avif"
+          />
+          <div class="card-content">
+            <h3>Turn It Off</h3>
+            <p>Javascript Project</p>
+          </div>
+        </div>
+      </a>
+      <a class="axe_throwing_card" href="./axethrowing.html">
+        <div class="card">
+          <img class="icon_images" src="/Creative Media Icons/axe_icon.avif" />
+          <div class="card-content">
+            <h3>Axe Throwing</h3>
+            <p>Virtual Reality Project</p>
+          </div>
+        </div>
+      </a>
+      <a class="just_one_day_card" href="./justoneday.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/Creative Media Icons/just_one_day_icon.avif"
+          />
+          <div class="card-content">
+            <h3>Just One Day</h3>
+            <p>Production Project</p>
+          </div>
+        </div>
+      </a>
+      <a class="in_my_mind_card" href="./inmymind.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/Creative Media Icons/my_mind_icon.avif"
+          />
+          <div class="card-content">
+            <h3>In My Mind</h3>
+            <p>Virtual Reality Project</p>
+          </div>
+        </div>
+      </a>
     </div>
 
-
-    
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

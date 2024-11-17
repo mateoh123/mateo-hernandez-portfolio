@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="photographystyle.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="title_div">
+      <hr />
+      <div class="photography_line">
+        <span class="photography_titles">SONICON<br />AVA</span>
+        <span class="photography_number">06</span>
+      </div>
+      <hr />
+    </div>
+    <div class="body_div">
+      <div class="image_wrapper">
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="/Photography Photos/Sonicon Photos/IMG_5845.avif"
+        />
+      </div>
+      <p class="body_text">
+        On the final day of my freshman year, while exploring with friends, we
+        came across a serene waterfront at the Brooklyn Promenade. Inspired by
+        the moment's spontaneity, I experimented with the interplay of unsteady
+        rocks, exposure, and shutter speed. The result was a series of photos
+        that captured dynamic, light-inspired patterns—evoking a mesmerizing
+        light show that reminded me of the vibrant energy of my friend Ava.
+      </p>
+    </div>
+    <hr />
+
+    <div class="grid-container"></div>
+
+    <div class="row">
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Sonicon Photos/IMG_5848.avif"
+          style="width: 100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Sonicon Photos/IMG_5856 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Sonicon Photos/IMG_5857 [MConverter.eu].avif"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="title_div">
+      <hr />
+      <div class="photography_line">
+        <span class="photography_titles">TURN<br />IT OFF</span>
+        <span class="photography_number">2024</span>
+      </div>
+      <hr />
+    </div>
+    <div class="body_div_creative_media">
+      <div class="image_wrapper">
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="/Creative Media Content/Screenshot 2024-11-17 at 4.05.04 AM.png"
+        />
+      </div>
+      <p class="body_text_creative_media">
+        Combining my passion for visual storytelling and coding, I developed an
+        interactive visual experience using the P5.js library in JavaScript. The
+        project chronicles a relatable and everyday moment: oversleeping an
+        alarm and the frustration that follows. Through dynamic visuals and
+        creative coding, I aimed to capture the humor and chaos of this
+        universal experienceThe project is linked<a
+          href="https://editor.p5js.org/mateoh.gif/full/h-MlGJWYc"
+          >here.</a
+        >
+      </p>
+      <p class="body_text_creative_media">
+        <span class="bolded">Software Used:</span> Javascript - P5.JS Library
+      </p>
+    </div>
+    <hr />
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

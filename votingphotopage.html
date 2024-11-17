@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="photographystyle.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="title_div">
+      <hr />
+      <div class="photography_line">
+        <span class="photography_titles">VOTING<br />IS COOL</span>
+        <span class="photography_number">10</span>
+      </div>
+      <hr />
+    </div>
+    <div class="body_div">
+      <div class="image_wrapper">
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="/Photography Photos/Voting Photos/I_Love_Voting_Kashvi.webp"
+          alt="Go Vote"
+        />
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="/Photography Photos/Voting Photos/I_Voted_Kashvi_V2_No_Shadow.webp"
+          alt="Go Vote Alternate"
+        />
+      </div>
+      <p class="body_text">
+        This project began as a conversation with a friend about how to make
+        voting more appealing to younger audiences. Inspired by the clean,
+        elegant aesthetic of clothing campaigns from brands like ZARA and H&M,
+        the initial concept was to create a minimalist and sophisticated series
+        urging people to vote. <br /><br />However, the idea evolved into a
+        whimsical and playful approach, designed to resonate with a broader
+        audience. By focusing on fun and lighthearted visuals, the photos use
+        selective coloring to highlight the "I Voted" stickers. This intentional
+        design choice draws the audience’s attention to the sticker, subtly
+        encouraging civic engagement while keeping the tone approachable and
+        memorable.
+      </p>
+    </div>
+    <hr />
+    <div class="grid-container">
+      <img
+        id="myImg"
+        class="myImages"
+        src="/Photography Photos/Voting Photos/I_LOVE_VOTING_Lamar.webp"
+        alt="PlayFul Voting"
+      />
+      <img
+        id="myImg"
+        class="myImages"
+        src="/Photography Photos/Voting Photos/Kashvi_LayingDown.webp"
+        alt="Vote Graphic"
+      />
+      <img
+        id="myImg"
+        class="myImages"
+        src="/Photography Photos/Voting Photos/Lamar_UpClose.webp"
+        alt="Playful Voting"
+      />
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,81 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
 
-<body style="background-color: #F9E4Bc;">
+  <body style="background-color: #000000">
     <nav id="desktop-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="./index.html">About</a></li>
-                <li><a href="./photography.html">Photography</a></li>
-                <li><a href="./projects.html">Creative Media</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li>
+            <a class="nav_text" style="color: #ffffff" href="./photography.html"
+              >PHOTOGRAPHY</a
+            >
+          </li>
+          <li>
+            <a class="nav_text" style="color: #ffffff" href="./projects.html"
+              >CREATIVE MEDIA</a
+            >
+          </li>
+          <li>
+            <a class="nav_text" style="color: #ffffff" href="./webdesign.html"
+              >WEB DEVELOPMENT</a
+            >
+          </li>
+          <li>
+            <a class="nav_text" style="color: #ffffff" href="./contact.html"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-                <li><a href="./photography.html" onclick="toggleMenu()">Photography</a></li>
-                <li><a href="./projects.html" onclick="toggleMenu()">Creative Media</a></li>
-                <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Mateo Hernandez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
+          </li>
+          <li>
+            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
+          </li>
+          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
-    <section id="profile">
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/mateo_bio_image.png" alt="Profile picture" class="abount-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="abount-containers">
-                    <div class="details-container">
-                        <h3>Education</h3>
-                        <p>Undergraduate @ New York University: Integrated Design Media</p>
 
-                    </div>
-                </div>
-                <div class="text-container" style="margin-top:20px;">
-                    <p>Born and raised in Southern California, residing in the Pasadena area. I started my photography journey at the 13, when
-                    I finally switched from my shotty iPhone SE to the brand new (at the time) iPhone 8 Plus. The new shiny portable camera
-                    opened a whole new world for me. Every day, I would make my friends pose in front of the camera during PE. I dictated
-                    the poses, the lighting, and the scenery. My continued use of photography in everyday life has given me a keen eye for
-                    image composition. Finally upgrading to a used Canon EOS Rebel T6 at 16 (my current camera), and my sketchbook of ideas,
-                    I've conceptualized and executed photoshoots and assisted yearbooks in bringing their images to fruition. Ask me
-                    anything about my archive of photos, I couldn't include on here and ill happily show you!</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <h1 class="title" font-size: 40px;">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            
-            <p><a href="mailto:mateoche76@gmail.com">mateoche76@gmail.com</a></p>
-        </div>
-        <div class="contact-info-upper-container">
-            
-            <p><a href="https://www.instagram.com/_.tomateo._/">Instagram</a></p>
-        </div>
-    </section>
-    <script src="script.js"></script>
-
-</body>
-
+    <div class="title_div">
+      <hr />
+      <div class="photography_line">
+        <span class="photography_titles" style="color: #ffffff"
+          >MATEO HERNANDEZ</span
+        >
+        <marquee
+          direction="down"
+          behavior="alternate"
+          style="color: #ffffff"
+          class="boucing_text"
+        >
+          <marquee behavior="alternate">MATEO HERNANDEZ</marquee>
+        </marquee>
+      </div>
+    </div>
+    <hr />
+    <div class="body_div_creative_media">
+      <div class="image_wrapper">
+        <img
+          id="myImg"
+          class="body_image myImages"
+          height="650px"
+          src="./Creative Media Content/IMG_1116.webp"
+        />
+      </div>
+      <p class="body_text_creative_media" style="color: #ffffff">
+        Born and raised in Southern California, my journey into the diverse
+        creative and technical fields I explore today has been both unexpected
+        and rewarding. My passion for photography began at 13, armed with just
+        an iPhone 8 Plus, capturing the world around me. Over time, that
+        creative spark expanded into coding in multiple languages (JavaScript,
+        HTML/CSS—like this website you're viewing—and Python), experimenting
+        with VR game development, and constantly pushing myself to explore new
+        mediums.
+        <br /><br />Currently, I’m a student at New York University’s Tandon
+        School of Engineering, pursuing a degree in Integrated Design and Media.
+        My ultimate goal? To leverage my multifaceted skill set to address
+        climate change and drive sustainability initiatives. Whether through
+        creative storytelling, innovative technology, or impactful design.
+      </p>
+      <div class="social-media-column">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email"
+          aria-label="Email"
+        ></a>
+      </div>
+    </div>
+    <hr />
+  </body>
 </html>

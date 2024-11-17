@@ -1,127 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+  </head>
 
-<body style="background-color: #F9E4Bc;">
+  <body style="background-color: #ffffff">
     <nav id="desktop-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="./index.html">About</a></li>
-                <li><a href="./photography.html">Photography</a></li>
-                <li><a href="./projects.html">Creative Media</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+          <li>
+            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
+          </li>
+          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Mateo Hernandez</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-                <li><a href="./photography.html" onclick="toggleMenu()">Photography</a></li>
-                <li><a href="./projects.html" onclick="toggleMenu()">Creative Media</a></li>
-                <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <h1 class="title-photography">Photography</h1>
-    <h1 class="title-photography-subheaders">Offical Beach Business</h1>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/madison1.png" style="width:30%">
-            <img src="./assets/madison2.png" style="width:30%">
-            <img src="./assets/madison3.png" style="width:30%">
-            <img src="./assets/madison4.png" style="width:30%">
-            <img src="./assets/madison5.png" style="width:30%">
-            <img src="./assets/madison6.png" style="width:30%">
-        </div>
-        </div>
 
-    <h1 class="title-photography-subheaders">Roosevelt Island</h1>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/island1.png" style="width:30%">
-            <img src="./assets/island2.png" style="width:30%">
-            <img src="./assets/island3.png" style="width:30%">
-            <img src="./assets/island4.png" style="width:30%">
-            <img src="./assets/island5.png" style="width:30%">
-            <img src="./assets/island6.png" style="width:30%">
-            <img src="./assets/island7.png" style="width:30%">
-            <img src="./assets/island8.png" style="width:30%">
+    <hr />
+    <h1 class="title">PHOTOGRAPHY</h1>
+    <hr />
+    <div class="photo_post_container">
+      <a class="voting_card" href="votingphotopage.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/photography_icons/Lamar_UpClose.webp"
+          />
+          <div class="card-content">
+            <h3>V0ting Is C00l</h3>
+            <p>November - 1 - 2024</p>
+          </div>
         </div>
+      </a>
+      <a class="amtrack_card" href="./amtrackphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/Untitled-1.webp" />
+          <div class="card-content">
+            <h3>Across The Amtrack</h3>
+            <p>August - 24 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="sea_card" href="./seaphotopage.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/photography_icons/sea_foam_icon.webp"
+          />
+          <div class="card-content">
+            <h3>Out From Sea Foam</h3>
+            <p>August - 10 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="early_card" href="./earlyphotopage.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/photography_icons/early_morn_icon.webp"
+          />
+          <div class="card-content">
+            <h3>Think Of Me</h3>
+            <p>June - 26 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="sonicon_card" href="./soniconphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/sonicon_icon.webp" />
+          <div class="card-content">
+            <h3>Sonicon Ava</h3>
+            <p>May - 14 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="central_card" href="./centralphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/central_icon.webp" />
+          <div class="card-content">
+            <h3>Central Park Whimsy</h3>
+            <p>May - 14 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="sona_card" href="./bigcityphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/sona_icon.webp" />
+          <div class="card-content">
+            <h3>Big City</h3>
+            <p>March - 30 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="valentine_card" href="./valentinephotopage.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/photography_icons/valentine_icon.webp"
+          />
+          <div class="card-content">
+            <h3>Allyson's Valentine</h3>
+            <p>February - 14 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="think_card" href="./thinkphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/think_icon.avif" />
+          <div class="card-content">
+            <h3>Does He Still Think Of Me?</h3>
+            <p>February - 12 - 2024</p>
+          </div>
+        </div>
+      </a>
+      <a class="kids_card" href="./laphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/kids_icon.webp" />
+          <div class="card-content">
+            <h3>The Kids Of LA</h3>
+            <p>July - 7 - 2023</p>
+          </div>
+        </div>
+      </a>
+      <a class="headshots_card" href="./headshotsphotopage.html">
+        <div class="card">
+          <img
+            class="icon_images"
+            src="/photography_icons/headshot_icon.webp"
+          />
+          <div class="card-content">
+            <h3>Portaits</h3>
+            <p>---</p>
+          </div>
+        </div>
+      </a>
+      <a class="nyc_card" href="./newyorkphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/nyc_icon.webp" />
+          <div class="card-content">
+            <h3>New York</h3>
+            <p>---</p>
+          </div>
+        </div>
+      </a>
+      <a class="cali_card" href="caliphotopage.html">
+        <div class="card">
+          <img class="icon_images" src="/photography_icons/cali_icon.webp" />
+          <div class="card-content">
+            <h3>California</h3>
+            <p>---</p>
+          </div>
+        </div>
+      </a>
     </div>
-
-    <h1 class="title-photography-subheaders">Big City</h1>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/sona1.png" style="width:30%">
-            <img src="./assets/sona2.png" style="width:30%">
-            <img src="./assets/sona3.png" style="width:30%">
-            <img src="./assets/sona4.png" style="width:30%">
-            <img src="./assets/sona5.png" style="width:30%">
-            <img src="./assets/sona6.png" style="width:30%">
-            <img src="./assets/sona7.png" style="width:30%">
-
-        </div>
-    </div>
-
-    <h1 class="title-photography-subheaders">Up Above</h1>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/lamar1.png" style="width:30%">
-            <img src="./assets/lamar2.png" style="width:30%">
-            <img src="./assets/lamar3.png" style="width:30%">
-            <img src="./assets/lamar4.png" style="width:30%">
-            <img src="./assets/lamar5.png" style="width:30%">
-    
-        </div>
-    </div>
-
-    <h1 class="title-photography-subheaders">Kids of LA</h1>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/skyline1.png" style="width:30%">
-            <img src="./assets/skyline2.png" style="width:30%">
-            <img src="./assets/skyline3.png" style="width:30%">
-            <img src="./assets/skyline4.png" style="width:30%">
-            <img src="./assets/skyline5.png" style="width:30%">
-            <img src="./assets/skyline6.png" style="width:30%">
-            <img src="./assets/skyline7.png" style="width:30%">
-    
-        </div>
-    </div>
-
-    <h1 class="title-photography-subheaders">Portrait</h1>
-    <div class="row">
-        <div class="column">
-            <img src="./assets/port1.png" style="width:30%">
-            <img src="./assets/port2.png" style="width:30%">
-            <img src="./assets/port3.png" style="width:30%">
-            <img src="./assets/port4.png" style="width:30%">
-            <img src="./assets/port5.png" style="width:30%">
-            <img src="./assets/port6.png" style="width:30%">
-            <img src="./assets/port7.png" style="width:30%">
-            <img src="./assets/port8.png" style="width:30%">
-    
-        </div>
-    </div>
-    
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
