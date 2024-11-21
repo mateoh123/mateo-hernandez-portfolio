@@ -14,45 +14,23 @@
 
   <body style="background-color: #ffffff">
     <nav id="desktop-nav">
-      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
-      <div>
-        <ul class="nav-links">
-          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-          <li>
-            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
-          </li>
-          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mateo Hernandez</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-          <li>
-            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
-          </li>
-          <li>
-            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
-          </li>
-          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
+      <ul class="logo">
+        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+      </ul>
+
+      <ul class="nav-links">
+        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+      </ul>
     </nav>
     <div class="title_div">
-      <hr />
       <div class="photography_line">
         <span class="photography_titles">AXE<br />THROWING</span>
         <span class="photography_number">2024</span>
       </div>
-      <hr />
+      <hr class="black_line" />
     </div>
     <div class="body_div_creative_media">
       <div class="image_wrapper">
@@ -74,12 +52,18 @@
         VR game development, interactive design, and collaboration to create an
         engaging, immersive experience.
       </p>
-      <p class="body_text_creative_media">
-        <span class="bolded">Software Used:</span> Blender - Unity (C#) - Meta
+            <dl class="body_text_creative_media_V2">
+        <dt><span class="bolded">Date: </span>May 2024</dt>
+        <dt><span class="bolded">Role: </span>Head Programmer</dt>
+        <dt>
+          <span class="bolded">Software Used: </span>Blender - Unity (C#) - Meta
         Oculus Quest 3 - Photoshop - Glitch
-      </p>
+        </dt>
+      </dl>
     </div>
-    <hr />
+
+    </div>
+    <hr class="black_line" />
 
     <!-- The Modal -->
     <div id="myModal" class="modal">

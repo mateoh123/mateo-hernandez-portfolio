@@ -14,40 +14,19 @@
 
   <body style="background-color: #ffffff">
     <nav id="desktop-nav">
-      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
-      <div>
-        <ul class="nav-links">
-          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-          <li>
-            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
-          </li>
-          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+      <ul class="logo">
+        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+      </ul>
+
+      <ul class="nav-links">
+        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+      </ul>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mateo Hernandez</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-          <li>
-            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
-          </li>
-          <li>
-            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
-          </li>
-          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+
     <div class="title_div">
-      <hr />
       <div class="photography_line">
         <span class="photography_titles">VOTING<br />IS COOL</span>
         <span class="photography_number">10</span>
@@ -60,16 +39,17 @@
           id="myImg"
           class="body_image myImages"
           src="/Photography Photos/Voting Photos/I_Love_Voting_Kashvi.webp"
-          alt="Go Vote"
         />
         <img
           id="myImg"
           class="body_image myImages"
           src="/Photography Photos/Voting Photos/I_Voted_Kashvi_V2_No_Shadow.webp"
-          alt="Go Vote Alternate"
         />
       </div>
       <p class="body_text">
+        <span style="font-weight: bold; font-size: 40px"
+          >Make Voting Cool Again...<br
+        /></span>
         This project began as a conversation with a friend about how to make
         voting more appealing to younger audiences. Inspired by the clean,
         elegant aesthetic of clothing campaigns from brands like ZARA and H&M,
@@ -84,36 +64,40 @@
       </p>
     </div>
     <hr />
-    <div class="grid-container">
-      <img
-        id="myImg"
-        class="myImages"
-        src="/Photography Photos/Voting Photos/I_LOVE_VOTING_Lamar.webp"
-        alt="PlayFul Voting"
-      />
-      <img
-        id="myImg"
-        class="myImages"
-        src="/Photography Photos/Voting Photos/Kashvi_LayingDown.webp"
-        alt="Vote Graphic"
-      />
-      <img
-        id="myImg"
-        class="myImages"
-        src="/Photography Photos/Voting Photos/Lamar_UpClose.webp"
-        alt="Playful Voting"
-      />
+    <div class="row">
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Voting Photos/I_LOVE_VOTING_Lamar.webp"
+          style="width: 100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Voting Photos/Kashvi_LayingDown.webp"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="/Photography Photos/Voting Photos/Lamar_UpClose.webp"
+          style="width: 100%"
+        />
+      </div>
     </div>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
-      <!-- The Close Button -->
       <span class="close">&times;</span>
 
-      <!-- Modal Content (The Image) -->
       <img class="modal-content" id="img01" />
 
-      <!-- Modal Caption (Image Text) -->
       <div id="caption"></div>
     </div>
     <script src="script.js"></script>

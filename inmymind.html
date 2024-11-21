@@ -14,45 +14,24 @@
 
   <body style="background-color: #ffffff">
     <nav id="desktop-nav">
-      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
-      <div>
-        <ul class="nav-links">
-          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-          <li>
-            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
-          </li>
-          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+      <ul class="logo">
+        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+      </ul>
+
+      <ul class="nav-links">
+        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+      </ul>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mateo Hernandez</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="./index.html" onclick="toggleMenu()">About</a></li>
-          <li>
-            <a href="./photography.html" onclick="toggleMenu()">Photography</a>
-          </li>
-          <li>
-            <a href="./projects.html" onclick="toggleMenu()">Creative Media</a>
-          </li>
-          <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+
     <div class="title_div">
-      <hr />
       <div class="photography_line">
         <span class="photography_titles">IN<br />MY MIND</span>
         <span class="photography_number">2024</span>
       </div>
-      <hr />
+      <hr class="black_line" />
     </div>
     <div class="body_div_creative_media">
       <div class="image_wrapper">
@@ -62,7 +41,7 @@
           src="/Creative Media Content/Screenshot 2024-11-17 at 4.41.07 AM.png"
         />
       </div>
-      <p class="body_text_creative_media">
+      <p class="body_text_creative_media_V3">
         During a challenging period in my life, I sought a way to express my
         personal struggles through a medium I had never fully explored—virtual
         reality. Leveraging Glitch's A-Frame library, I developed an immersive
@@ -72,14 +51,21 @@
         identity and aspirations. This project showcases my ability to merge
         innovative technology with storytelling, creating a deeply personal and
         immersive experience that pushes the boundaries of traditional media.
-        The project is linked<a href="https://empty-minded.glitch.me/">here.</a>
       </p>
-      <p class="body_text_creative_media">
-        <span class="bolded">Software Used:</span> HTML - CSS - Glitch (A-Frame)
-        - PolyCam(3D Scanning) - Blender
-      </p>
+      <dl class="body_text_creative_media_V2">
+        <dt><span class="bolded">Date: </span>March 2024</dt>
+        <dt><span class="bolded">Role: </span>Sole Programmer/Designer</dt>
+        <dt>
+          <span class="bolded">URL: </span
+          ><a href="https://empty-minded.glitch.me/">In My Mind</a>
+        </dt>
+        <dt>
+          <span class="bolded">Software Used: </span>HTML - CSS - Glitch
+          (A-Frame) - PolyCam(3D Scanning) - Blender
+        </dt>
+      </dl>
     </div>
-    <hr />
+    <hr class="black_line" />
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
