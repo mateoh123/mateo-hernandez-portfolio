@@ -527,9 +527,8 @@ section {
 
 .photo_post_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-left: 2%;
 }
 
 .main_page_subtitle {
@@ -549,6 +548,7 @@ section {
   width: 400px;
   overflow: hidden;
   border-style: solid;
+  margin-top: 20px;
 }
 
 .card-content {
@@ -822,7 +822,7 @@ section {
 .photography_number {
   font-size: 1200%;
   text-align: center;
-  color: #e66f00;
+  color: #ebad1c;
   margin: 0%;
   margin-right: 1%;
   padding: 0%;
@@ -1049,6 +1049,7 @@ nav a {
 
 nav a:hover {
   background-color: #ebad1c;
+  color: #ffffff;
 }
 
 nav li:first-child {
@@ -1120,14 +1121,12 @@ footer {
 .body_div_mobile {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
   background-color: #000000;
   padding: 3%;
 }
 
 .title_wrapper_mobile {
   display: flex;
-  flex-wrap: wrap;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -1292,7 +1291,6 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /*accordian Info*/
 details {
