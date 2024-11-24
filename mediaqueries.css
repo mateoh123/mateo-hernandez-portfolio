@@ -496,7 +496,7 @@
 }
 
 /* Mobile Appears */
-@media (max-width: 425px) {
+@media (max-width: 400px) {
   /* Mobile Styling */
   .main_page_title_mobile {
     font-size: 200%;
