@@ -4,25 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="photographystyle.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
   <body style="background-color: #ffffff">
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
-        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
-        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        <li>
+          <a style="color: #ebad1c" class="side_nav_text" href="./index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
 
@@ -31,19 +86,19 @@
         <span class="photography_titles">CENTRAL<br />PARK WHIMSY</span>
         <span class="photography_number">05</span>
       </div>
-      <hr />
+      <hr class="black_line" />
     </div>
     <div class="body_div">
       <div class="image_wrapper">
         <img
           id="myImg"
           class="body_image myImages"
-          src="/Photography Photos/Central Photos/IMG_5755 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5755 [MConverter.eu].avif"
         />
         <img
           id="myImg"
           class="body_image myImages"
-          src="/Photography Photos/Central Photos/IMG_5758 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5758 [MConverter.eu].avif"
         />
       </div>
       <p class="body_text">
@@ -59,7 +114,42 @@
         bringing her unique essence to life in each frame.
       </p>
     </div>
-    <hr />
+    <div class="description_column">
+      <hr class="black_line" />
+      <div class="body_div_V2">
+        <p class="body_text">
+          <span style="font-weight: bold; font-size: 40px"
+            >In The Depths Of The Cities Forest...<br
+          /></span>
+          Growing up in Pasadena, California, I’ve always been drawn to nature
+          as a natural backdrop for my photography. During a picnic in Central
+          Park, I set out to capture my friend’s whimsical personality through a
+          series of portraits. Inspired by her vibrant energy, I aimed to create
+          images that felt light, free, and full of life. Using color grading to
+          achieve an iridescent quality, I sought to evoke a dreamlike
+          atmosphere, bringing her unique essence to life in each frame.
+        </p>
+      </div>
+    </div>
+    <div class="mobile_photo_descriptions">
+      <hr class="black_line" />
+      <details>
+        <summary>In The Depths Of The Cities Forest...</summary>
+        <main>
+          <p style="color: #000000">
+            Growing up in Pasadena, California, I’ve always been drawn to nature
+            as a natural backdrop for my photography. During a picnic in Central
+            Park, I set out to capture my friend’s whimsical personality through
+            a series of portraits. Inspired by her vibrant energy, I aimed to
+            create images that felt light, free, and full of life. Using color
+            grading to achieve an iridescent quality, I sought to evoke a
+            dreamlike atmosphere, bringing her unique essence to life in each
+            frame.
+          </p>
+        </main>
+      </details>
+    </div>
+    <hr class="black_line" />
 
     <div class="grid-container"></div>
 
@@ -68,13 +158,13 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Central Photos/IMG_5740 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5740 [MConverter.eu].avif"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Central Photos/IMG_5743 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5743 [MConverter.eu].avif"
           style="width: 100%"
         />
       </div>
@@ -82,13 +172,13 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Central Photos/IMG_5746 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5746 [MConverter.eu].avif"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Central Photos/IMG_5763 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5763 [MConverter.eu].avif"
           style="width: 100%"
         />
       </div>
@@ -97,7 +187,7 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Central Photos/IMG_5769 [MConverter.eu].avif"
+          src="./Photography Photos/Central Photos/IMG_5769 [MConverter.eu].avif"
           style="width: 100%"
         />
       </div>
@@ -114,6 +204,31 @@
       <!-- Modal Caption (Image Text) -->
       <div id="caption"></div>
     </div>
+    <footer style="background-color: #000000; margin-top: 5px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

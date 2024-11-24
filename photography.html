@@ -4,41 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
   <body style="background-color: #ffffff">
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
-        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
-        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        <li>
+          <a style="color: #ebad1c" class="side_nav_text" href="./index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
 
-    <hr class="black_line">
+    <hr class="black_line" />
     <h1 class="title">PHOTOGRAPHY</h1>
-    <hr class="black_line">
+    <hr class="black_line" />
     <div class="photo_post_container">
       <a class="voting_card" href="votingphotopage.html">
         <div class="card">
           <img
             class="icon_images"
-            src="/photography_icons/Lamar_UpClose.webp"
+            src="./photography_icons/Lamar_UpClose.webp"
           />
           <div class="card-content">
             <h3>V0ting Is C00l</h3>
@@ -48,7 +103,7 @@
       </a>
       <a class="amtrack_card" href="./amtrackphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/Untitled-1.webp" />
+          <img class="icon_images" src="./photography_icons/Untitled-1.webp" />
           <div class="card-content">
             <h3>Across The Amtrack</h3>
             <p>August - 24 - 2024</p>
@@ -59,7 +114,7 @@
         <div class="card">
           <img
             class="icon_images"
-            src="/photography_icons/sea_foam_icon.webp"
+            src="./photography_icons/sea_foam_icon.webp"
           />
           <div class="card-content">
             <h3>Out From Sea Foam</h3>
@@ -71,7 +126,7 @@
         <div class="card">
           <img
             class="icon_images"
-            src="/photography_icons/early_morn_icon.webp"
+            src="./photography_icons/early_morn_icon.webp"
           />
           <div class="card-content">
             <h3>Think Of Me</h3>
@@ -81,7 +136,10 @@
       </a>
       <a class="sonicon_card" href="./soniconphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/sonicon_icon.webp" />
+          <img
+            class="icon_images"
+            src="./photography_icons/sonicon_icon.webp"
+          />
           <div class="card-content">
             <h3>Sonicon Ava</h3>
             <p>May - 14 - 2024</p>
@@ -90,7 +148,10 @@
       </a>
       <a class="central_card" href="./centralphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/central_icon.webp" />
+          <img
+            class="icon_images"
+            src="./photography_icons/central_icon.webp"
+          />
           <div class="card-content">
             <h3>Central Park Whimsy</h3>
             <p>May - 14 - 2024</p>
@@ -99,7 +160,7 @@
       </a>
       <a class="sona_card" href="./bigcityphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/sona_icon.webp" />
+          <img class="icon_images" src="./photography_icons/sona_icon.webp" />
           <div class="card-content">
             <h3>Big City</h3>
             <p>March - 30 - 2024</p>
@@ -110,7 +171,7 @@
         <div class="card">
           <img
             class="icon_images"
-            src="/photography_icons/valentine_icon.webp"
+            src="./photography_icons/valentine_icon.webp"
           />
           <div class="card-content">
             <h3>Allyson's Valentine</h3>
@@ -120,7 +181,7 @@
       </a>
       <a class="think_card" href="./thinkphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/think_icon.avif" />
+          <img class="icon_images" src="./photography_icons/think_icon.avif" />
           <div class="card-content">
             <h3>Does He Still Think Of Me?</h3>
             <p>February - 12 - 2024</p>
@@ -129,7 +190,7 @@
       </a>
       <a class="kids_card" href="./laphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/kids_icon.webp" />
+          <img class="icon_images" src="./photography_icons/kids_icon.webp" />
           <div class="card-content">
             <h3>The Kids Of LA</h3>
             <p>July - 7 - 2023</p>
@@ -140,7 +201,7 @@
         <div class="card">
           <img
             class="icon_images"
-            src="/photography_icons/headshot_icon.webp"
+            src="./photography_icons/headshot_icon.webp"
           />
           <div class="card-content">
             <h3>Portaits</h3>
@@ -150,7 +211,7 @@
       </a>
       <a class="nyc_card" href="./newyorkphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/nyc_icon.webp" />
+          <img class="icon_images" src="./photography_icons/nyc_icon.webp" />
           <div class="card-content">
             <h3>New York</h3>
             <p>---</p>
@@ -159,7 +220,7 @@
       </a>
       <a class="cali_card" href="caliphotopage.html">
         <div class="card">
-          <img class="icon_images" src="/photography_icons/cali_icon.webp" />
+          <img class="icon_images" src="./photography_icons/cali_icon.webp" />
           <div class="card-content">
             <h3>California</h3>
             <p>---</p>
@@ -167,6 +228,31 @@
         </div>
       </a>
     </div>
+    <footer style="background-color: #000000; margin-top: 5px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

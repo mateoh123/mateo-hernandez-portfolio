@@ -4,34 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
-        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
-        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        <li>
+          <a style="color: #ebad1c" class="side_nav_text" href="./index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
-
     <div class="title_div">
-
       <div class="photography_line">
         <span class="photography_titles">COMING SOON</span>
         <span class="photography_number">XX</span>
       </div>
-      <hr class="black_line" />
-
+    </div>
+    <hr class="black_line" />
+    <footer style="background-color: #000000; margin-top: 431px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
   </body>
 </html>

@@ -1,4 +1,4 @@
-// Modal Information 
+// Modal Information
 var modal = document.getElementById("myModal");
 
 var images = document.getElementsByClassName("myImages");
@@ -6,7 +6,6 @@ var images = document.getElementsByClassName("myImages");
 var modalImg = document.getElementById("img01");
 
 var captionText = document.getElementById("caption");
-
 
 for (var i = 0; i < images.length; i++) {
   var img = images[i];

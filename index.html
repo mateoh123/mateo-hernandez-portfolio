@@ -3,22 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon_io (1)/favicon.ico' />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
   <body>
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="">PAST PRESENT FUTURE</a></li>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
-        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
-        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        <li><a style="color:#ebad1c;" class="side_nav_text" href="">PAST PRESENT FUTURE</a></li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
     <div class="main_page_name">
@@ -28,8 +79,11 @@
         </div>
       </div>
     </div>
+    <!-- Mobile Optimization -->
+    <h4 class="main_page_title_mobile">MATEO<br />HERNANDEZ</h4>
 
     <div class="main_page_skills">
+
       <div class="section__text">
         <div class="white_text skills_text">
           <hr class="white_line" />
@@ -46,22 +100,36 @@
         </div>
         <div class="main_page_title_container">
           <h1
-            class="main_page_titles main_left white_text"
+            class="main_page_titles main_left white_text tech_title"
             style="margin-top: 40px"
           >
             TECHNICAL
           </h1>
           <h1
-            class="main_page_titles main_right white_text"
+            class="main_page_titles main_right white_text tech_title"
             style="margin-top: 40px"
           >
             SKILLS
           </h1>
         </div>
       </div>
+    </div> 
+
+    <div class="main_page_skills_mobile">
+      <div class="body_div_mobile">
+        <div class="title_wrapper_mobile">
+          <h1 class="title_text_mobile">TECHNICAL<br>SKILLS</h1>
+        </div>
+        <p class="body_text_mobile">
+          <br>++ CREATIVE MEDIA SOFTWARE<br>++ COMPUTER PROGRAMMING<br>++ PHOTOGRAPHY<br>++ GRAPHIC DESIGN<br>++ WEB DESIGN
+        </p>
+      </div>
     </div>
 
     <div class="main_page_recent_work">
+              <div class="title_wrapper_mobile">
+          <h1 class="title_text_recent_mobile">RECENT<br>WORK</h1>
+        </div>
       <div
         class="photo_post_container"
         style="justify-content: space-evenly; padding-left: 0%"
@@ -70,7 +138,7 @@
           <div class="card">
             <img
               class="icon_images"
-              src="/Creative Media Icons/day_icon.avif"
+              src="./Creative Media Icons/day_icon.avif"
             />
             <div class="card-content">
               <h3>Day In My Life</h3>
@@ -82,7 +150,7 @@
           <div class="card">
             <img
               class="icon_images"
-              src="/photography_icons/Lamar_UpClose.webp"
+              src="./photography_icons/Lamar_UpClose.webp"
             />
             <div class="card-content">
               <h3>V0ting Is C00l</h3>
@@ -92,7 +160,10 @@
         </a>
         <a class="amtrack_card" href="./amtrackphotopage.html">
           <div class="card">
-            <img class="icon_images" src="/photography_icons/Untitled-1.webp" />
+            <img
+              class="icon_images"
+              src="./photography_icons/Untitled-1.webp"
+            />
             <div class="card-content">
               <h3>Across The Amtrack</h3>
               <p>August - 24 - 2024</p>
@@ -102,17 +173,40 @@
       </div>
       <div class="section__text">
         <div class="main_page_title_container">
-          <h1 class="main_page_titles main_left" style="margin-top: 40px">
+          <h1 class="main_page_titles main_left recent_work_desktop" style="margin-top: 40px">
             RECENT WORK
           </h1>
         </div>
+      </div> 
+    </div>
+        <div class="main_page_skills_mobile">
+      <div class="body_div_mobile">
+        <div class="title_wrapper_mobile">
+          <h1 class="title_text_contact_mobile">GET IN<br>TOUCH</h1>
+        </div>
+       <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              style="font-size: 150%"
+              onClick="window.open('./assets/Mateo_Hernandez_Resume_2024.docx.pdf')"
+            >
+              Resume
+            </button>
+            <button
+              class="btn btn-color-1"
+              style="font-size: 150%"
+              onClick="location.href='./contact.html'"
+            >
+              Contact
+            </button>
+          </div>
       </div>
     </div>
 
-    <div class="main_page_contact">
+     <div class="main_page_contact">
       <div class="section__text">
         <div class="main_page_title_container">
-          <h1 class="main_page_titles main_left" style="margin-top: 40px">
+          <h1 class="main_page_titles main_left desktop_contact_title" style="margin-top: 40px">
             GET IN
           </h1>
           <div class="btn-container">
@@ -131,12 +225,35 @@
               Contact
             </button>
           </div>
-          <h1 class="main_page_titles main_right" style="margin-top: 40px">
+          <h1 class="main_page_titles main_right desktop_contact_title" style="margin-top: 40px">
             TOUCH
           </h1>
         </div>
       </div>
-    </div>
+    </div> 
+    <footer>
+      <p><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p><strong>Copyright @ 2024 Mateo Hernandez</strong></p>
+    </footer>
 
     <script src="script.js"></script>
   </body>

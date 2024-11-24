@@ -4,25 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="photographystyle.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
   <body style="background-color: #ffffff">
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
-        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
-        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        <li>
+          <a style="color: #ebad1c" class="side_nav_text" href="./index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
 
@@ -31,14 +86,14 @@
         <span class="photography_titles">ACROSS<br />THE AMTRACK</span>
         <span class="photography_number">09</span>
       </div>
-      <hr />
+      <hr class="black_line" />
     </div>
     <div class="body_div">
       <div class="image_wrapper">
         <img
           id="myImg"
           class="body_image myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8064 [MConverter.eu].avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8064 [MConverter.eu].avif"
           alt="Albuquerque, New Mexico Amtrack Station"
         />
       </div>
@@ -55,7 +110,42 @@
         shaped my trip.
       </p>
     </div>
-    <hr />
+    <div class="description_column">
+      <hr class="black_line" />
+      <div class="body_div_V2">
+        <p class="body_text">
+          <span style="font-weight: bold; font-size: 40px"
+            >When Im Back In Chicago...<br
+          /></span>
+          On my journey back to New York City for the new school year, I
+          traveled cross-country on Amtrak, capturing moments along the way.
+          This experience allowed me to explore new places like New Mexico and
+          revisit new favorites like Chicago, that now hold bittersweet
+          memories. Through these photos, I commemorated a unique adventure that
+          blended discovery and nostalgia, documenting the beauty of the
+          landscapes and cities that shaped my trip.
+        </p>
+      </div>
+    </div>
+    <div class="mobile_photo_descriptions">
+      <hr class="black_line" />
+      <details>
+        <summary>When Im Back In Chicago...</summary>
+        <main>
+          <p style="color: #ffffff">
+            On my journey back to New York City for the new school year, I
+            traveled cross-country on Amtrak, capturing moments along the way.
+            This experience allowed me to explore new places like New Mexico and
+            revisit new favorites like Chicago, that now hold bittersweet
+            memories. Through these photos, I commemorated a unique adventure
+            that blended discovery and nostalgia, documenting the beauty of the
+            landscapes and cities that shaped my trip.
+          </p>
+        </main>
+      </details>
+    </div>
+    <hr class="black_line" />
+
     <div class="grid-container"></div>
 
     <div class="row">
@@ -63,21 +153,21 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8065-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8065-copy.avif"
           alt="New Mexico Bank & Trust Building"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8167 copy [MConverter.eu].avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8167 copy [MConverter.eu].avif"
           alt="Train 8506"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8196 copy [MConverter.eu].avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8196 copy [MConverter.eu].avif"
           alt="Fort Madison, Iowa Train"
           style="width: 100%"
         />
@@ -85,8 +175,15 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8206-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8206-copy.avif"
           alt="Fort Madison, Iowa Amtrack Station"
+          style="width: 100%"
+        />
+        <img
+          id="myImg"
+          class="myImages"
+          src="./Photography Photos/Amtrack Photos/IMG_8252-copy.avif"
+          alt="Chicago, Illinois Building"
           style="width: 100%"
         />
       </div>
@@ -94,45 +191,35 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8252-copy.avif"
-          alt="Chicago, Illinois Building"
-          style="width: 100%"
-        />
-
-        <img
-          id="myImg"
-          class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8275-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8275-copy.avif"
           alt="Chicago, Illinois Bridge Post"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8297-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8297-copy.avif"
           alt="Albany, New York Joseph Bruno Train Station"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8304-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8304-copy.avif"
           alt="Albany, New York Fire Hydrant"
           style="width: 100%"
         />
-      </div>
-      <div class="column">
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8308-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8308-copy.avif"
           alt="Albany, New York Church"
           style="width: 100%"
         />
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Amtrack Photos/IMG_8329-copy.avif"
+          src="./Photography Photos/Amtrack Photos/IMG_8329-copy.avif"
           alt="Albany, New York Church"
           style="width: 100%"
         />
@@ -150,6 +237,31 @@
       <!-- Modal Caption (Image Text) -->
       <div id="caption"></div>
     </div>
+    <footer style="background-color: #000000; margin-top: 5px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

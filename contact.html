@@ -4,40 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
   <body style="background-color: #000000">
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
         <li>
-          <a class="nav_text" style="color: #ffffff" href="./photography.html"
+          <a style="color: #ebad1c" class="side_nav_text" href="./index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a
+            class="hideOnMobile"
+            style="color: #ffffff"
+            href="./photography.html"
             >PHOTOGRAPHY</a
           >
         </li>
         <li>
-          <a class="nav_text" style="color: #ffffff" href="./projects.html"
+          <a class="hideOnMobile" style="color: #ffffff" href="./projects.html"
             >CREATIVE MEDIA</a
           >
         </li>
         <li>
-          <a class="nav_text" style="color: #ffffff" href="./webdesign.html"
+          <a class="hideOnMobile" style="color: #ffffff" href="./webdesign.html"
             >WEB DEVELOPMENT</a
           >
         </li>
         <li>
-          <a class="nav_text" style="color: #ffffff" href="./contact.html"
+          <a class="hideOnMobile" style="color: #ffffff" href="./contact.html"
             >CONTACT</a
           >
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
         </li>
       </ul>
     </nav>
@@ -61,7 +111,6 @@
     <div class="body_div_creative_media">
       <div class="image_wrapper">
         <img
-          id="myImg"
           class="body_image myImages"
           height="650px"
           src="./Creative Media Content/IMG_1116.webp"
@@ -82,26 +131,32 @@
         climate change and drive sustainability initiatives. Whether through
         creative storytelling, innovative technology, or impactful design.
       </p>
-      <div class="social-media-column">
+    </div>
+    <hr />
+    <footer style="background-color: #000000; margin-top: 0px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
         <a
           href="https://www.linkedin.com/in/mateo-hernandez21/"
           target="_blank"
-          class="icon linkedin"
+          class="icon linkedin2"
           aria-label="LinkedIn"
         ></a>
         <a
           href="https://www.instagram.com/_.tomateo._/"
           target="_blank"
-          class="icon instagram"
+          class="icon instagram2"
           aria-label="Instagram"
         ></a>
         <a
           href="mailto:mateoche76@gmail.com"
-          class="icon email"
+          class="icon email2"
           aria-label="Email"
         ></a>
       </div>
-    </div>
-    <hr />
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
   </body>
 </html>

@@ -4,25 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="photographystyle.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </head>
 
   <body style="background-color: #ffffff">
-    <nav id="desktop-nav">
-      <ul class="logo">
-        <li><a href="./index.html">MATEO HERNANDEZ</a></li>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="./photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
-
       <ul class="nav-links">
-        <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-        <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-        <li><a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a></li>
-        <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
+        <li>
+          <a style="color: #e66f00" class="side_nav_text" href="./index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
       </ul>
     </nav>
 
@@ -31,14 +86,14 @@
         <span class="photography_titles">SONICON<br />AVA</span>
         <span class="photography_number">06</span>
       </div>
-      <hr />
+      <hr class="black_line" />
     </div>
     <div class="body_div">
       <div class="image_wrapper">
         <img
           id="myImg"
           class="body_image myImages"
-          src="/Photography Photos/Sonicon Photos/IMG_5845.avif"
+          src="./Photography Photos/Sonicon Photos/IMG_5845.avif"
         />
       </div>
       <p class="body_text">
@@ -53,7 +108,41 @@
         light show that reminded me of the vibrant energy of my friend Ava.
       </p>
     </div>
-    <hr />
+    <div class="description_column">
+      <hr class="black_line" />
+      <div class="body_div_V2">
+        <p class="body_text">
+          <span style="font-weight: bold; font-size: 40px"
+            >Under Blurry Lights...<br
+          /></span>
+          On the final day of my freshman year, while exploring with friends, we
+          came across a serene waterfront at the Brooklyn Promenade. Inspired by
+          the moment's spontaneity, I experimented with the interplay of
+          unsteady rocks, exposure, and shutter speed. The result was a series
+          of photos that captured dynamic, light-inspired patterns—evoking a
+          mesmerizing light show that reminded me of the vibrant energy of my
+          friend Ava.
+        </p>
+      </div>
+    </div>
+    <div class="mobile_photo_descriptions">
+      <hr class="black_line" />
+      <details>
+        <summary>Under Blurry Lights...</summary>
+        <main>
+          <p style="color: #ffffff">
+            On the final day of my freshman year, while exploring with friends,
+            we came across a serene waterfront at the Brooklyn Promenade.
+            Inspired by the moment's spontaneity, I experimented with the
+            interplay of unsteady rocks, exposure, and shutter speed. The result
+            was a series of photos that captured dynamic, light-inspired
+            patterns—evoking a mesmerizing light show that reminded me of the
+            vibrant energy of my friend Ava.
+          </p>
+        </main>
+      </details>
+    </div>
+    <hr class="black_line" />
 
     <div class="grid-container"></div>
 
@@ -62,7 +151,7 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Sonicon Photos/IMG_5848.avif"
+          src="./Photography Photos/Sonicon Photos/IMG_5848.avif"
           style="width: 100%"
         />
       </div>
@@ -70,7 +159,7 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Sonicon Photos/IMG_5856 [MConverter.eu].avif"
+          src="./Photography Photos/Sonicon Photos/IMG_5856 [MConverter.eu].avif"
           style="width: 100%"
         />
       </div>
@@ -79,7 +168,7 @@
         <img
           id="myImg"
           class="myImages"
-          src="/Photography Photos/Sonicon Photos/IMG_5857 [MConverter.eu].avif"
+          src="./Photography Photos/Sonicon Photos/IMG_5857 [MConverter.eu].avif"
           style="width: 100%"
         />
       </div>
@@ -96,6 +185,31 @@
       <!-- Modal Caption (Image Text) -->
       <div id="caption"></div>
     </div>
+    <footer style="background-color: #000000; margin-top: 5px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
