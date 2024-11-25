@@ -943,7 +943,7 @@ section {
   font-size: 120%;
   margin: 2%;
   flex: 1;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .body_text_contact {
@@ -1018,7 +1018,7 @@ section {
 }
 
 .instagram2 {
-  background-image: url("./assets/images.png");
+  background-image: url("./assets/7abf8006020903330673596b68774bf7.jpg");
 }
 
 .email2 {
@@ -1223,7 +1223,7 @@ footer {
   text-align: center;
 }
 
-/*Images Modal*/
+/*Images Modal All courtesy of W3 Schools, Thank You <3*/
 #myImg:hover {
   opacity: 0.7;
 }

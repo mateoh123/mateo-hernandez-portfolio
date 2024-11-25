@@ -6,6 +6,11 @@
     visibility: hidden;
   }
 
+  .description_column {
+    display: none;
+    visibility: hidden;
+  }
+
   /* Mobile Styling */
   .mobile_photo_descriptions {
     display: none;
