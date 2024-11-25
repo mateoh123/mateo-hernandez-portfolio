@@ -13,18 +13,94 @@
   </head>
 
   <body style="background-color: #ffffff">
-    <nav id="desktop-nav">
-      <div class="logo"><a href="./index.html">MATEO HERNANDEZ</a></div>
-      <div>
-        <ul class="nav-links">
-          <li><a class="nav_text" href="./photography.html">PHOTOGRAPHY</a></li>
-          <li><a class="nav_text" href="./projects.html">CREATIVE MEDIA</a></li>
-          <li>
-            <a class="nav_text" href="./webdesign.html">WEB DEVELOPMENT</a>
-          </li>
-          <li><a class="nav_text" href="./contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <ul class="nav-links">
+        <li>
+          <a style="color: #ebad1c" class="side_nav_text" href=""
+            >PAST PRESENT FUTURE</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">
+            <img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7740-copy.webp"
+              style="width: 30%; height: 90%" />PHOTOGRAPHY<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7740-copy.webp"
+              style="width: 30%; height: 90%"
+          /></a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html"
+            ><img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7042-copy.webp"
+              style="width: 20%; height: 90%" />CREATIVE MEDIA<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7042-copy.webp"
+              style="width: 20%; height: 90%"
+          /></a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html"
+            ><img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_8735.webp"
+              style="width: 20%; height: 90%" />WEB DEVELOPMENT<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_8735.webp"
+              style="width: 20%; height: 90%"
+          /></a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html"
+            ><img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_3158-copy.webp"
+              style="width: 40%; height: 90%" />CONTACT<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_3158-copy.webp"
+              style="width: 40%; height: 90%"
+          /></a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Mateo Hernandez</div>
