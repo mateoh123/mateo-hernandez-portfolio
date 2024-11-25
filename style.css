@@ -1006,7 +1006,7 @@ section {
 }
 
 .instagram {
-  background-image: url("./assets/instagram-new.png");
+  background-image: url("./assets/instagram-new\ \(1\).png");
 }
 
 .email {
@@ -1109,7 +1109,7 @@ footer {
   font-family: "Roboto Condensed", sans-serif;
   padding: 10px 10px 10px 10px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: auto;
 }
 
