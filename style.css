@@ -1029,7 +1029,7 @@ nav {
   box-shadow: 3px 3px 5px rgba(209, 118, 0, 0.1);
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 nav ul {
@@ -1042,13 +1042,11 @@ nav ul {
 
 nav li {
   height: 60px;
-  margin-right: 40px;
 }
 
 nav a {
   height: 100%;
-  width: 120%;
-  padding: 0 5px;
+  padding: 0 20px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -1056,16 +1054,9 @@ nav a {
   color: #000000;
 }
 
-nav a:hover .hide_image {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
-
-.hide_image {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+nav a:hover {
+  background-color: #eb9500;
+  color: #f1f1f1;
 }
 
 nav li:first-child {
