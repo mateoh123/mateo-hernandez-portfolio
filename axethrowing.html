@@ -122,3 +122,188 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateo Hernandez - Portfolio</title>
+        <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <ul class="nav-links">
+        <li>
+          <a style="color: #ebad1c" class="side_nav_text" href=""
+            >PAST PRESENT FUTURE</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">
+            <img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7740-copy.webp"
+              style="width: 30%; height: 90%" />PHOTOGRAPHY<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7740-copy.webp"
+              style="width: 30%; height: 90%"
+          /></a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html"
+            ><img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7042-copy.webp"
+              style="width: 20%; height: 90%" />CREATIVE MEDIA<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 1 new/IMG_7042-copy.webp"
+              style="width: 20%; height: 90%"
+          /></a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html"
+            ><img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_8735.webp"
+              style="width: 20%; height: 90%" />WEB DEVELOPMENT<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_8735.webp"
+              style="width: 20%; height: 90%"
+          /></a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html"
+            ><img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_3158-copy.webp"
+              style="width: 40%; height: 90%" />CONTACT<img
+              class="hide_image"
+              src="./Rotating Banner Images]/row 2 new/IMG_3158-copy.webp"
+              style="width: 40%; height: 90%"
+          /></a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="title_div">
+      <div class="photography_line">
+        <span class="photography_titles">AXE<br />THROWING</span>
+        <span class="photography_number">2024</span>
+      </div>
+      <hr class="black_line" />
+    </div>
+    <div class="body_div_creative_media">
+      <div class="image_wrapper">
+        <video class="body_image" controls>
+          <source
+            src="Creative Media Content/56f4badd60194dfca8e4e16960a3e369.mov"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="body_text_creative_media">
+        As part of my XR team, we were tasked with developing a video game for
+        the Oculus Meta Quest 3. Collaborating closely, we created an immersive
+        VR axe-throwing game set in the depths of the New York sewers. Utilizing
+        the XR Action Kit for Unity, we integrated key features such as
+        teleportation, score tracking, sound effects, and dynamic visual design
+        to enhance the player experience. This project demonstrates my skills in
+        VR game development, interactive design, and collaboration to create an
+        engaging, immersive experience.
+      </p>
+            <dl class="body_text_creative_media_V2">
+        <dt><span class="bolded">Date: </span>May 2024</dt>
+        <dt><span class="bolded">Role: </span>Head Programmer</dt>
+        <dt>
+          <span class="bolded">Software Used: </span>Blender - Unity (C#) - Meta
+        Oculus Quest 3 - Photoshop - Glitch
+        </dt>
+      </dl>
+    </div>
+
+    </div>
+    <hr class="black_line" />
+    <footer style="background-color: #000000; margin-top: 0px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin2"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram2"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email2"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>Copyright @ 2024 Mateo Hernandez</strong>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
