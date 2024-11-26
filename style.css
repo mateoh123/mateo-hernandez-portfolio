@@ -1003,26 +1003,38 @@ section {
 
 .linkedin {
   background-image: url("./assets/2018_social_media_popular_app_logo_linkedin-512.webp");
+  width: 35px;
+  height: 35px;
 }
 
 .instagram {
   background-image: url("./assets/instagram-new\ \(1\).png");
+  width: 35px;
+  height: 35px;
 }
 
 .email {
   background-image: url("./assets/331389.png");
+  width: 55px;
+  height: 55px;
 }
 
 .linkedin2 {
-  background-image: url("./assets/2018_social_media_popular_app_logo_linkedin-512.webp");
+  background-image: url("./assets/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp");
+  width: 45px;
+  height: 45px;
 }
 
 .instagram2 {
-  background-image: url("./assets/7abf8006020903330673596b68774bf7.jpg");
+  background-image: url("./assets/free-instagram-logo-icon-3497-thumb.png");
+  width: 35px;
+  height: 35px;
 }
 
 .email2 {
-  background-image: url("./assets/331389.png");
+  background-image: url("./assets/4a60f7545cddbd8a42317ed1c48ab6aa.jpg");
+  width: 35px;
+  height: 35px;
 }
 
 nav {
