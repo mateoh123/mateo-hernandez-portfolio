@@ -1,14 +1,31 @@
 @media screen and (max-width: 3000px) {
   /*Column Descriptions*/
 
-  .nav_image_icons {
+  .skills_column {
     display: none;
     visibility: hidden;
   }
 
+  .skills_column_V2 {
+    display: none;
+    visibility: hidden;
+  }
+  .nav_image_icons {
+    display: none;
+    visibility: hidden;
+  }
   .description_column {
     display: none;
     visibility: hidden;
+  }
+  .body_text_creative_media_V4 {
+    font-family: "Niramit", sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    margin: 2%;
+    flex: 1;
+    line-height: 1.5;
+    visibility: visible;
   }
 
   /* Mobile Styling */
@@ -93,9 +110,43 @@
   }
 }
 
+@media screen and (max-width: 2000px) {
+  .description_column_V2 {
+    display: block;
+    visibility: visible;
+  }
+
+  .skills_column_V2 {
+    display: block;
+    visibility: visible;
+  }
+
+  .description_row_V2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .description_contact_V2 p {
+    display: none;
+    visibility: hidden;
+  }
+
+  .video_alignment {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1800px) {
   .main_page_titles {
     font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .photography_number_axe_throwing {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -103,6 +154,27 @@
   .description_column {
     display: block;
     visibility: visible;
+  }
+
+  .skills_column {
+    display: block;
+    visibility: visible;
+  }
+
+  .description_row {
+    display: none;
+    visibility: hidden;
+  }
+
+  .body_text_creative_media_V4 {
+    font-family: "Niramit", sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    margin: 2%;
+    flex: 1;
+    line-height: 1.5;
+    visibility: hidden;
+    display: none;
   }
 }
 
@@ -182,6 +254,10 @@
 @media screen and (max-width: 1500px) {
   .body_div {
     flex-direction: column;
+  }
+  .description_contact p {
+    visibility: hidden;
+    display: none;
   }
 
   .body_div p {
@@ -341,6 +417,11 @@
     margin: auto;
     display: block;
     display: none;
+  }
+
+  .web_dev_card img {
+    display: none;
+    visibility: hidden;
   }
 
   .title {
