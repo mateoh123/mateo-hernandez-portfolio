@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <ul class="nav-links">
+        <li>
+          <a style="color: #d56103" class="side_nav_text" href="index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="title_div">
+      <div class="photography_line">
+        <span class="photography_titles">WIRED:<br />AR MAGAZINE</span>
+        <span class="photography_number photography_number_axe_throwing"
+          >2025</span
+        >
+      </div>
+      <hr class="black_line" />
+    </div>
+    <div class="body_div_creative_media description_contact_V2 video_alignment">
+      <div class="image_wrapper">
+        <video class="body_image" controls>
+          <source
+            src="Creative Media Content/video-output-21530D5F-9FFF-43B9-A721-00AA5882786D.mov"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p class="body_text_creative_media">
+        I created a 2D animated cover for Wired magazine, utilizing Photoshop's
+        rotoscoping and animating the movement in Premiere Pro to push the
+        boundaries of traditional magazine design. By integrating augmented
+        reality through a Snapchat lens, the static cover transforms into an
+        interactive experience, engaging readers with dynamic and eye-catching
+        visuals.
+      </p>
+      <dl class="body_text_creative_media_V2 description_row_V2">
+        <dt><span class="bolded">Date: </span>February 2025</dt>
+        <dt>
+          <span class="bolded">URL: </span
+          ><a href="https://snapchat.com/t/OLrWLQ10"
+            >Wired Magazine: AR Edition</a
+          >
+        </dt>
+        <dt>
+          <span class="bolded">Software Used: </span>Lens Studio - Blender -
+          Adobe Photoshop - Adobe Premiere Pro
+        </dt>
+      </dl>
+    </div>
+    <div class="skills_column_V2">
+      <hr class="black_line" />
+      <p class="body_text_creative_media">
+        I created a 2D animated cover for Wired magazine, utilizing Photoshop's
+        rotoscoping and animating the movement in Premiere Pro to push the
+        boundaries of traditional magazine design. By integrating augmented
+        reality through a Snapchat lens, the static cover transforms into an
+        interactive experience, engaging readers with dynamic and eye-catching
+        visuals.
+      </p>
+      <hr class="black_line" />
+      <dl class="body_text_creative_media_V2">
+        <dt><span class="bolded">Date: </span>February 2025</dt>
+        <dt>
+          <span class="bolded">URL: </span
+          ><a href="https://snapchat.com/t/OLrWLQ10"
+            >Wired Magazine: AR Edition</a
+          >
+        </dt>
+        <dt>
+          <span class="bolded">Software Used: </span>Lens Studio - Blender -
+          Adobe Photoshop - Adobe Premiere Pro
+        </dt>
+      </dl>
+    </div>
+    <hr class="black_line" />
+    <div class="row">
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="./Creative Media Content/WIRED_3009_cover.webp"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+
+      <img class="modal-content" id="img01" />
+
+      <div id="caption"></div>
+    </div>
+
+    <footer style="background-color: #000000; margin-top: 5px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>© 2025 Mateo Hernandez. All Rights Reserved.</strong>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

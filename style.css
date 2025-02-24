@@ -16,6 +16,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
 
 * {
   box-sizing: border-box;
@@ -129,6 +130,7 @@ a {
   color: black;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  margin: 1%;
 }
 
 .web_portfolio_card:hover {
@@ -182,6 +184,24 @@ a {
 
 .white_text {
   color: #ffffff;
+}
+
+.twentytoten_card {
+  color: black;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.twentytoten_card:hover {
+  color: #d56103;
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.twentytoten_card:hover p,
+.twentytoten_card:hover h3 {
+  color: #d56103;
+  font-family: "Schoolbell", serif;
 }
 
 .voting_card {
@@ -898,7 +918,7 @@ section {
 .photography_number {
   font-size: 1200%;
   text-align: center;
-  color: #ebad1c;
+  color: #d56103;
   margin: 0%;
   margin-right: 1%;
   padding: 0%;
@@ -1141,7 +1161,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #eb9500;
+  background-color: #d56103;
   color: #f1f1f1;
 }
 

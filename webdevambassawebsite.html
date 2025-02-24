@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateo Hernandez - Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./favicon_io (1)/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body style="background-color: #ffffff">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li><a href="./projects.html">CREATIVE MEDIA</a></li>
+        <li><a href="./webdesign.html">WEB DEVELOPMENT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <ul class="nav-links">
+        <li>
+          <a style="color: #d56103" class="side_nav_text" href="index.html"
+            >MATEO HERNANDEZ</a
+          >
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./photography.html">PHOTOGRAPHY</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./projects.html">CREATIVE MEDIA</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./webdesign.html">WEB DEVELOPMENT</a>
+        </li>
+        <li>
+          <a class="hideOnMobile" href="./contact.html">CONTACT</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="title_div">
+      <div class="photography_line">
+        <span class="photography_titles">AMBASSA-<br />WEBSITE</span>
+        <span class="photography_number">02</span>
+      </div>
+      <hr class="black_line" />
+    </div>
+    <div class="body_div">
+      <div class="image_wrapper">
+        <img
+          id="myImg"
+          class="body_image myImages"
+          src="./Web Development Icons/ambassawebsite_sizes_icon.png"
+        />
+      </div>
+      <p class="body_text">
+        <span style="font-weight: bold; font-size: 40px"
+          >Project Overview<br
+        /></span>
+        I designed and developed a comprehensive website for NYU’s Admissions
+        Ambassadors, a student ambassador group of over 200 members. The site
+        features custom graphics, photography, and thoughtfully crafted layouts
+        to enhance usability and engagement. Using WordPress’s native HTML/CSS
+        editor, I built the website from the ground up, adapting key features to
+        function entirely in HTML due to the platform’s limitations on
+        JavaScript integration.
+      </p>
+    </div>
+    <div class="description_column">
+      <hr class="black_line" />
+      <div class="body_div_V2">
+        <p class="body_text">
+          <span style="font-weight: bold; font-size: 40px"
+            >Project Overview<br
+          /></span>
+          I designed and developed a comprehensive website for NYU’s Admissions
+          Ambassadors, a student ambassador group of over 200 members. The site
+          features custom graphics, photography, and thoughtfully crafted
+          layouts to enhance usability and engagement. Using WordPress’s native
+          HTML/CSS editor, I built the website from the ground up, adapting key
+          features to function entirely in HTML due to the platform’s
+          limitations on JavaScript integration.
+        </p>
+      </div>
+    </div>
+    <div class="mobile_photo_descriptions">
+      <hr class="black_line" />
+      <details>
+        <summary>Project Overview</summary>
+        <main>
+          <p style="color: #ffffff">
+            I designed and developed a comprehensive website for NYU’s
+            Admissions Ambassadors, a student ambassador group of over 200
+            members. The site features custom graphics, photography, and
+            thoughtfully crafted layouts to enhance usability and engagement.
+            Using WordPress’s native HTML/CSS editor, I built the website from
+            the ground up, adapting key features to function entirely in HTML
+            due to the platform’s limitations on JavaScript integration.
+          </p>
+        </main>
+      </details>
+    </div>
+    <hr class="black_line" />
+    <div class="row">
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="./Web Development Icons/ambassawebsite_example2.png"
+          style="width: 100%"
+        />
+      </div>
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="./Web Development Icons/ambassawebsite_example3.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          id="myImg"
+          class="myImages"
+          src="./Web Development Icons/ambassawebsite_example4.png"
+          style="width: 100%"
+        />
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+
+      <img class="modal-content" id="img01" />
+
+      <div id="caption"></div>
+    </div>
+    <footer style="background-color: #000000; margin-top: 5px">
+      <p style="color: #ffffff"><strong>Socials</strong></p>
+      <div class="social-media-row">
+        <a
+          href="https://www.linkedin.com/in/mateo-hernandez21/"
+          target="_blank"
+          class="icon linkedin"
+          aria-label="LinkedIn"
+        ></a>
+        <a
+          href="https://www.instagram.com/_.tomateo._/"
+          target="_blank"
+          class="icon instagram"
+          aria-label="Instagram"
+        ></a>
+        <a
+          href="mailto:mateoche76@gmail.com"
+          class="icon email"
+          aria-label="Email"
+        ></a>
+      </div>
+      <p style="color: #ffffff">
+        <strong>© 2025 Mateo Hernandez. All Rights Reserved.</strong>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
