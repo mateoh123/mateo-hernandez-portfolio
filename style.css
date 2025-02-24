@@ -1162,6 +1162,7 @@ nav a {
 
 nav a:hover {
   color: #f1f1f1;
+  background-color: #e66f00;
 }
 
 nav li:first-child {
