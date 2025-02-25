@@ -217,15 +217,15 @@ a {
 }
 
 .voting_card2:hover {
-  color: #02612b;
+  color: #d56103;
   filter: none;
   -webkit-filter: grayscale(0);
 }
 
 .voting_card2:hover p,
 .voting_card2:hover h3 {
-  color: #1ca714;
-  font-family: "DynaPuff", system-ui;
+  color: #d56103;
+  font-family: "Schoolbell", serif;
 }
 
 .amtrack_card {
