@@ -210,6 +210,12 @@ a {
   -webkit-filter: grayscale(100%);
 }
 
+.voting_card2 {
+  color: black;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
 .voting_card2:hover {
   color: #02612b;
   filter: none;
